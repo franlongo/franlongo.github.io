@@ -1,0 +1,47 @@
+/* Typogrphy */
+
+h1 {
+    font-size: 7rem;
+}
+
+/* Sections */
+
+#landingScreen {
+    min-height: 100vh;
+    padding: 8rem 0;
+}
+
+#landingScreen h1 {
+    margin-bottom: 3rem;
+}
+
+#landingScreen .overlayed-images {
+    position: relative;
+    height: 250px;
+}
+
+#landingScreen .overlayed-images img {
+    position: absolute;
+}
+
+#landingScreen .overlayed-images img.left {
+    bottom: 0;
+    right: 0;
+}
+
+#landingScreen .overlayed-images img.right {
+    top: 0;
+    left: 0;
+}
+
+#landingScreen .templine span {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    /* transform: translateX(-50%); */
+    width: 9px;
+    height: 20%;
+    /* background: black; */
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}

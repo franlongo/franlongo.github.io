@@ -1,0 +1,225 @@
+/* Blending modes */
+.multiply {
+    mix-blend-mode: multiply;
+}
+
+.luminosity {
+    mix-blend-mode: luminosity;
+}
+
+.divide {
+    mix-blend-mode: color-dodge;
+    opacity: 0.75;
+}
+
+.screen {
+    mix-blend-mode: screen;
+}
+
+.overlay {
+    mix-blend-mode: overlay;
+}
+
+/* styles */
+body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    background-image: url(./img/backgroud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-element {
+    max-width: 100%;
+    position: absolute;
+}
+
+#top-illustration-white {
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+
+    left: -2%;
+    max-width: 65%;
+}
+
+#top-text-white {
+    z-index: 1;
+    position: absolute;
+    top: 14%;
+    right: -1%;
+    max-width: 64%;
+}
+
+#top-flower-white {
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    max-width: 60%;
+    right: 0;
+
+}
+
+#bottom-flower {
+    bottom: 0;
+}
+
+#bottom-glass {
+    bottom: 6%;
+    left: 0;
+}
+
+#bottom-illustration-white {
+    bottom: 2%;
+    right: 0;
+    width: 38%;
+
+}
+
+#bottom-text-black {
+    bottom: 4.5%;
+    left: 25%;
+    width: 27%;
+}
+
+section {
+    position: relative;
+    z-index: 10;
+}
+
+section img.paper {
+    width: 100%;
+    height: auto;
+}
+
+/* SECTION AUDIO */
+#bgAudio {
+    display: none;
+}
+
+/* Additional Hover */
+.hidden-hover {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: Calc(50% - 15px);
+}
+
+.hidden-hover.top {
+    top: 5%;
+}
+
+.hidden-hover.bottom {
+    bottom: 5%;
+}
+
+
+/* SECTION TITLE */
+
+section#title .text-wrapper {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+section#title .text-wrapper .title-img {
+    text-align: center;
+    max-width: 85%;
+
+}
+
+section#title .text-wrapper>* {
+    text-align: center;
+}
+
+section#title .text-wrapper h4 {
+    margin-top: 3rem
+}
+
+/* SECTION DESCRIPTION */
+section#description {
+    margin-top: 11rem;
+
+}
+
+section#description .text-wrapper {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    width: 50%;
+}
+
+/* SECTION ART */
+section#art {
+    margin-top: 11rem;
+}
+
+section#art .collage img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:0;
+    left:0;
+}
+section#art .collage{
+position: absolute;
+}
+
+section#art #a1.collage {
+    width: 50%;
+    top: 6%;
+    right: 7%;
+}
+section#art #a2.collage {
+    width: 57%;
+    top: 36%;
+    left: 6%;
+}
+section#art #a3.collage {
+    width: 55%;
+    bottom: 32%;
+    right: 8%;
+}
+
+
+
+
+
+/* SECTION FOOT */
+section#foot {
+    margin-top: 15rem;
+}
+
+section#foot .text-wrapper {
+    position: absolute;
+    bottom: 28%;
+    width: 100%;
+    text-align: center;
+}
+
+section#foot .text-wrapper img {
+    max-width: 50%;
+}
+
+/* Edit mouse */
+#magicMouseCursor {
+    display: none;
+    z-index: 999;
+}
+
+body #magicPointer {
+    z-index: 999;
+
+}
+
+body #magicPointer:not(.pointer-overlay) {
+    background: #dc682f !important;
+    height: 15px !important;
+    width: 15px !important;
+
+}

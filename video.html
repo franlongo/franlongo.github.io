@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video | Wunderkammer</title>
+
+    <link rel="stylesheet" href="video-styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+</head>
+
+<body >
+    <video id="video" src="./img/video-collage/transparent.mp4" loop ></video>
+    <img src="./img/video-collage/background-cut.png" class="bg">
+    <img src="./img/video-collage/paper.png" class="paper">
+    <img src="./img/video-collage/tape (multiply).png" class="tape" class="magic-hover">
+   
+
+    <script type="text/javascript"
+        src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./scripts.js"></script>
+    <script>
+          var video = document.getElementById("video");
+            $(document).on("click", function () {
+                if(video.paused){
+                    video.play();
+                    $("#magicPointer").addClass('pause')
+                }else{
+                    video.pause();
+                    $("#magicPointer").removeClass('pause')
+
+                }
+            });
+    </script>
+</body>
+
+</html>

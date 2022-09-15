@@ -55,18 +55,18 @@
         <img src="./img/paper 3 illustrations.png" class="paper" alt="">
 
         <!-- Art 1 -->
-        <div id="a1" class="collage">
+        <div id="a1" class="collage magic-hover">
             <img src="img/collage 1/sun circle.png" class="rellax" data-rellax-speed="-0.5">
             <img src="img/collage 1/house & trees.png" class="rellax h" data-rellax-speed="-1">
             <img src="img/collage 1/path.png" class="rellax" data-rellax-speed="0">
             <img src="img/collage 1/flowers.png" class="rellax " data-rellax-speed="-1.25">
             <img src="img/collage 1/rock (1).png" class="rellax " data-rellax-speed="-1.75">
             <img src="img/collage 1/rock (2).png" class="rellax " data-rellax-speed="-2.5">
-            <img src="img/collage 1/cactus cluster.png" class="rellax " data-rellax-speed="-2.5">
+            <a href="./objects.html" ><img src="img/collage 1/cactus cluster.png" class="rellax " data-rellax-speed="-2.5"></a>
         </div>
 
         <!-- Art 2 -->
-        <div id="a2" class="collage">
+        <div id="a2" class="collage magic-hover">
             <img src="img/collage 2/circle small.png" class="rellax" data-rellax-speed="-0.25">
             <img src="img/collage 2/circle big.png" class="rellax" data-rellax-speed="-0.75">
             <img src="img/collage 2/tree on house large.png" class="rellax" data-rellax-speed="-1">
@@ -75,11 +75,11 @@
             <img src="img/collage 2/cactus back.png" class="rellax" data-rellax-speed="-1">
             <img src="img/collage 2/cactus front.png" class="rellax " data-rellax-speed="-1.25">
             <img src="img/collage 2/snail cluster.png" class="rellax " data-rellax-speed="-1.5">
-            <img src="img/collage 2/sheep skull.png" class="rellax " data-rellax-speed="-2.5">
+            <a href="./video.html" ><img src="img/collage 2/sheep skull.png" class="rellax " data-rellax-speed="-2.5"></a>
         </div>
 
         <!-- Art 3 -->
-        <div id="a3" class="collage">
+        <div id="a3" class="collage magic-hover">
             <img src="img/collage 3/sun.png" class="rellax " data-rellax-speed="-0.5">
             <img src="img/collage 3/back view.png" class="rellax" data-rellax-speed="-1">
             <img src="img/collage 3/trees (back).png" class="rellax " data-rellax-speed="-1.5">
@@ -88,7 +88,7 @@
             <img src="img/collage 3/bush (front).png" class="rellax" data-rellax-speed="-1">
             <img src="img/collage 3/cactus (back).png" class="rellax" data-rellax-speed="-1.5">
             <img src="img/collage 3/rocks (front).png" class="rellax" data-rellax-speed="-2">
-            <img src="img/collage 3/rocks small (front).png" class="rellax " data-rellax-speed="-2.5">
+            <a href="./photo.html" ><img src="img/collage 3/rocks small (front).png" class="rellax " data-rellax-speed="-2.5"></a>
         </div>
     </section>
 
@@ -115,6 +115,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            //PARALLAX
+            var rellax = new Rellax('.rellax', {
+                center: true
+            });
+            //END PARALLAX
+
+            //AUDIO
+            var sound = document.getElementById("bgAudio");
+            $(document).on("scroll", function () {
+
+                //play and unmute 
+                if (sound.paused) {
+                    sound.play();
+                    sound.muted = false;
+                }
+
+                //increase / decrease sound depending on scroll 
+                if (window.pageYOffset < 2000) {
+                    sound.volume = (window.pageYOffset / 2000)
+                } else {
+                    sound.volume = 1;
+                }
+            });
+            //END AUDIO
+        });
+    </script>
 </body>
 
 </html>

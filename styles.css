@@ -31,6 +31,9 @@ body {
     background-size: cover;
 }
 
+a{
+    cursor: none;
+}
 .bg-element {
     max-width: 100%;
     position: absolute;

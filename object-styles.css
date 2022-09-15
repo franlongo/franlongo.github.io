@@ -1,0 +1,95 @@
+/* styles */
+body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    background-image: url(./img/photo-collage/bg\ colour.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img:not(.paper){
+    position: absolute;
+}
+
+.paper{
+    width: 100%;
+    height: auto;
+    padding: 8rem 0px;
+}
+.tear.bottom{
+    position: absolute;
+    mix-blend-mode: color-dodge;
+    top: 10%;
+    left: 0;
+    width: 100%;
+}
+.tear.top{
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+}
+.text{
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 45%;
+}
+
+.bottles{
+    position: absolute;
+    top: 16%;
+    right: 41%;
+    width: 32%;
+}
+.dog{
+    top: 56%;
+    left: 63%;
+    width: 30%;
+}
+.sheep{
+    top: 40%;
+    left: 0;
+    width: 36%;
+}
+.glass{
+    top: 46%;
+    right: 26%;
+    width: 13%;
+}
+.jar{
+    top: 11%;
+    right: 9%;
+    width: 30%;
+}
+.snails{
+    top: 67%;
+    left: 40%;
+    width: 30%;
+}
+
+
+
+audio{
+    display: none;
+}
+/* Edit mouse */
+#magicMouseCursor {
+    display: none;
+    z-index: 999;
+}
+
+body #magicPointer {
+    z-index: 999;
+
+}
+
+body #magicPointer:not(.pointer-overlay) {
+    background: #dc682f !important;
+    height: 15px !important;
+    width: 15px !important;
+
+}

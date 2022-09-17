@@ -15,23 +15,35 @@
 <body>
 
     <!-- Audio -->
-    <audio id="bgAudio" controls loop muted>
-        <source src="./sounds/sound.WAV" type="audio/WAV">
+    <audio id="ambulanceSound" controls loop muted>
+        <source src="./sounds/ambulance.WAV" type="audio/WAV">
+    </audio>
+    <audio id="birdsSound" controls loop muted>
+        <source src="./sounds/birds.WAV" type="audio/WAV">
+    </audio>
+    <audio id="roosterSound" controls loop muted>
+        <source src="./sounds/rooster.WAV" type="audio/WAV">
+    </audio>
+    <audio id="constructionSound" controls loop muted>
+        <source src="./sounds/construction.WAV" type="audio/WAV">
     </audio>
 
-    <img src="./img/object-collage/paper and illustrations.png" class="paper">
-    <img src="./img/object-collage/paper tear (multiply).png" class="tear top">
-    <img src="./img/object-collage/paper tear inverted.png" class="tear bottom">
+
+    <div>
+        <img src="./img/object-collage/paper and illustrations.png" class="paper">
+        <img src="./img/object-collage/paper tear (multiply).png" class="tear top">
+        <img src="./img/object-collage/paper tear inverted.png" class="tear bottom">
     
     
-    <img src="./img/object-collage/bottles and snails.png" class="bottles magic-hover">
-    <img src="./img/object-collage/dog skull.png" class="dog magic-hover">
-    <img src="./img/object-collage/glass pieces.png" class="glass magic-hover">
-    <img src="./img/object-collage/jar or glass.png" class="jar magic-hover">
-    <img src="./img/object-collage/sheep skull.png" class="sheep magic-hover">
-    <img src="./img/object-collage/snails.png" class="snails magic-hover">
-    <img src="./img/object-collage/text and swirls illustrations.png" class="text magic-hover">
-   
+        <img src="./img/object-collage/bottles and snails.png" class="bottles magic-hover">
+        <img src="./img/object-collage/dog skull.png" class="dog magic-hover">
+        <img src="./img/object-collage/glass pieces.png" class="glass magic-hover">
+        <img src="./img/object-collage/jar or glass.png" class="jar magic-hover">
+        <img src="./img/object-collage/sheep skull.png" class="sheep magic-hover">
+        <img src="./img/object-collage/snails.png" class="snails magic-hover">
+        <img src="./img/object-collage/text and swirls illustrations.png" class="text magic-hover">
+    </div>
+
 
     <script type="text/javascript"
         src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
@@ -42,6 +54,10 @@
 
     <script src="./scripts.js"></script>
     <script>
+
+        $('#').on("click", function () {
+
+        });
 
         //construction
         //birds

@@ -31,9 +31,10 @@ body {
     background-size: cover;
 }
 
-a{
+a {
     cursor: none;
 }
+
 .bg-element {
     max-width: 100%;
     position: absolute;
@@ -42,10 +43,9 @@ a{
 #top-illustration-white {
     z-index: 1;
     position: absolute;
-    top: 12%;
-
-    left: -2%;
-    max-width: 65%;
+    top: 10%;
+    left: -10%;
+    max-width: 80%;
 }
 
 #top-text-white {
@@ -69,9 +69,12 @@ a{
     bottom: 0;
 }
 
+
 #bottom-glass {
-    bottom: 6%;
+    bottom: 0%;
     left: 0;
+    width: 50%;
+
 }
 
 #bottom-illustration-white {
@@ -82,7 +85,7 @@ a{
 }
 
 #bottom-text-black {
-    bottom: 4.5%;
+    bottom:0;
     left: 25%;
     width: 27%;
 }
@@ -144,7 +147,7 @@ section#title .text-wrapper h4 {
 
 /* SECTION DESCRIPTION */
 section#description {
-    margin-top: 11rem;
+    margin-top: 5rem;
 
 }
 
@@ -159,18 +162,19 @@ section#description .text-wrapper {
 
 /* SECTION ART */
 section#art {
-    margin-top: 11rem;
+    margin-top: 5rem;
 }
 
 section#art .collage img {
     width: 100%;
     height: auto;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
-section#art .collage{
-position: absolute;
+
+section#art .collage {
+    position: absolute;
 }
 
 section#art #a1.collage {
@@ -178,24 +182,22 @@ section#art #a1.collage {
     top: 6%;
     right: 7%;
 }
+
 section#art #a2.collage {
     width: 57%;
     top: 36%;
     left: 6%;
 }
+
 section#art #a3.collage {
     width: 55%;
     bottom: 32%;
     right: 8%;
 }
 
-
-
-
-
 /* SECTION FOOT */
 section#foot {
-    margin-top: 15rem;
+    margin-top: 4rem;
 }
 
 section#foot .text-wrapper {
@@ -225,4 +227,61 @@ body #magicPointer:not(.pointer-overlay) {
     height: 15px !important;
     width: 15px !important;
 
+}
+
+/* Media queries */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+    section#description,
+    section#art {
+        margin-top: 9rem;
+    }
+
+    section#foot {
+        margin-top: 6rem;
+    }
+    #bottom-text-black {
+        bottom:2%;
+        left: 25%;
+        width: 27%;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+
+    section#description,
+    section#art {
+        margin-top: 12rem;
+    }
+
+    section#foot {
+        margin-top: 15rem;
+    }
+
+    #top-illustration-white {
+
+        top: 10%;
+        left: -3%;
+        width: 65%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    section#description,
+    section#art {
+        margin-top: 20rem;
+    }
+
+    #top-illustration-white {
+
+        top: 11%;
+        width: 70%;
+    }
 }

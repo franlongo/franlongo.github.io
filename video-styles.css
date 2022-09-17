@@ -36,12 +36,19 @@ body {
     position: relative;
 }
 
-.tape {
+.tape:not(.mobile) {
     position: absolute;
     top: 13%;
     right: 8%;
     mix-blend-mode: multiply;
     width: 55%;
+}
+.tape.mobile{
+    position: absolute;
+    top: 6%;
+    right: 11%;
+    mix-blend-mode: multiply;
+    width: 75%;
 }
 
 video {

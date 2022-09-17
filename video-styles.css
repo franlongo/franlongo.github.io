@@ -11,13 +11,25 @@ body {
     background-position: center;
     background-size: cover;
 }
-.bg{
+
+.mobile {
+    display: block;
+}
+
+.bg:not(.mobile),
+.paper:not(.mobile),
+.tape:not(.mobile) {
+    display: none;
+}
+.bg {
     position: absolute;
     top: 0;
     left: 0;
     height: auto;
     width: 100%;
+    
 }
+
 .paper {
     height: auto;
     width: 100%;
@@ -31,11 +43,13 @@ body {
     mix-blend-mode: multiply;
     width: 55%;
 }
-video{
-    width: 100%;
+
+video {
+    width: auto;
+    height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    transform: rotate(270deg);
 }
 
 /* Edit mouse */
@@ -54,22 +68,55 @@ body #magicPointer:not(.pointer-overlay) {
     width: 0px !important;
     border-radius: 0 !important;
     background: transparent !important;
-    border-left: 60px solid #dc682f;
-    border-bottom: 40px solid transparent;
-    border-top: 40px solid transparent;
-    border-right: 40px solid transparent;
+    border-left: 25px solid #dc682f;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
     transition: none;
 
 }
 
 body #magicPointer:not(.pointer-overlay).pause {
-    height: 60px !important;
-    width: 10px !important;
+    height: 25px !important;
+    width: 5px !important;
     border-radius: 0 !important;
     background: transparent !important;
-    border-left: 11px solid #dc682f;
+    border-left: 5px solid #dc682f;
     border-bottom: none;
     border-top: none;
-    border-right: 10px solid #dc682f;
+    border-right: 5px solid #dc682f;
     transition: none;
 }
+
+/* Media queries */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+    .bg.mobile,
+    .paper.mobile,
+    .tape.mobile{
+        display: none;
+    }
+
+    .bg:not(.mobile),
+    .paper:not(.mobile),
+    .tape:not(.mobile) {
+        display: block;
+    }
+    video {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(0deg);
+
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

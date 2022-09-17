@@ -1,12 +1,12 @@
 /* styles */
 body {
-    height: 100%;
+    min-height:100vh;
     position: relative;
     margin: 0;
     background-image: url(./img/photo-collage/bg\ colour.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
 }
 .bg{
     mix-blend-mode: multiply;

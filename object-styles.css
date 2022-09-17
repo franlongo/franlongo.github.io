@@ -4,78 +4,103 @@ body {
     position: relative;
     margin: 0;
     background-image: url(./img/photo-collage/bg\ colour.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-img:not(.paper){
+img:not(.paper) {
     position: absolute;
+    transition: all 0.3s;
+
+}
+.dog:hover, .sheep:hover , .jar:hover , .bottles:hover {
+transform: translateY(-1%) !important;
+transition: all 0.3s;
 }
 
-.paper{
+.paper {
     width: 100%;
     height: auto;
-    padding: 8rem 0px;
 }
-.tear.bottom{
-    position: absolute;
+
+.paper.short {
+    padding: 8rem 0px;
+    display: none;
+}
+
+.paper.long {
+    padding: 2rem 0;
+}
+
+.tear.bottom {
     mix-blend-mode: color-dodge;
     top: 10%;
     left: 0;
     width: 100%;
 }
-.tear.top{
+
+.tear.top {
     mix-blend-mode: multiply;
-    position: absolute;
     bottom: 50%;
     left: 0;
     width: 100%;
 }
-.text{
-    position: absolute;
-    top: 7%;
-    left: 0;
-    width: 45%;
+
+.text {
+    top: 80%;
+    left: 5%;
+    width: 60%;
 }
 
-.bottles{
-    position: absolute;
-    top: 16%;
-    right: 41%;
-    width: 32%;
-}
-.dog{
-    top: 56%;
-    left: 63%;
+.flowy {
+    top: 10%;
+    left: 0;
     width: 30%;
 }
-.sheep{
-    top: 40%;
-    left: 0;
-    width: 36%;
-}
-.glass{
-    top: 46%;
+
+.bottles {
+    top: 27%;
     right: 26%;
-    width: 13%;
+    width: 37%;
 }
-.jar{
-    top: 11%;
-    right: 9%;
-    width: 30%;
+
+.dog {
+    top: 75%;
+    right: 20px;
+    width: 37%;
 }
-.snails{
-    top: 67%;
-    left: 40%;
-    width: 30%;
+
+.sheep {
+    top: 41%;
+    left: 0;
+    width: 44%;
+}
+
+.glass {
+
+    top: 55%;
+    right: 14%;
+    width: 18%;
+}
+
+.jar {
+    top: 10%;
+    right: 2%;
+    width: 42%
+}
+
+.snails {
+    top: 66%;
+    left: 37%;
+    width: 37%;
 }
 
 
 
-audio{
+audio {
     display: none;
 }
+
 /* Edit mouse */
 #magicMouseCursor {
     display: none;
@@ -93,3 +118,90 @@ body #magicPointer:not(.pointer-overlay) {
     width: 15px !important;
 
 }
+
+/* Media queries */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+    .paper.short {
+        display: block;
+    }
+
+    .paper.long {
+        display: none;
+    }
+
+    .tear.bottom {
+        position: absolute;
+        mix-blend-mode: color-dodge;
+        top: 10%;
+        left: 0;
+        width: 100%;
+    }
+
+    .tear.top {
+        mix-blend-mode: multiply;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 100%;
+    }
+
+    .text {
+        top: 70%;
+        left: 5%;
+        width: 45%;
+    }
+    .flowy {
+        top: 14%;
+        left: 0;
+        width: 22%;
+    }
+
+    .bottles {
+        position: absolute;
+        top: 18%;
+        right: 41%;
+        width: 32%;
+    }
+
+    .dog {
+        top: 56%;
+        left: 63%;
+        width: 30%;
+    }
+
+    .sheep {
+        top: 40%;
+        left: 0;
+        width: 36%;
+    }
+
+    .glass {
+        top: 46%;
+        right: 26%;
+        width: 13%;
+    }
+
+    .jar {
+        top: 20%;
+        right: 2%;
+        width: 30%;
+    }
+
+    .snails {
+        top: 67%;
+        left: 40%;
+        width: 30%;
+    }
+
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

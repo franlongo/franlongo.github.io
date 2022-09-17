@@ -1,3 +1,29 @@
+/* loader */
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/loader-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.loader-text {
+    width:80%;
+    height: auto;
+}
+.content{
+    visibility: hidden;
+}
+
 /* Blending modes */
 .multiply {
     mix-blend-mode: multiply;
@@ -85,7 +111,7 @@ a {
 }
 
 #bottom-text-black {
-    bottom:0;
+    bottom: 0;
     left: 25%;
     width: 27%;
 }
@@ -151,14 +177,23 @@ section#description {
 
 }
 
-section#description .text-wrapper {
+section#description .text1 {
 
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10%;
-    width: 50%;
+    top: 40%;
+    left: 14%;
+    width: 55%;
+    width: 35%;
 }
+
+section#description .text2 {
+    position: absolute;
+    top: 17%;
+    right: 20%;
+    width: 55%;
+    width: 27%;
+}
+
 
 /* SECTION ART */
 section#art {
@@ -175,6 +210,10 @@ section#art .collage img {
 
 section#art .collage {
     position: absolute;
+}
+
+section#art .collage:hover {
+    scale: 1.01;
 }
 
 section#art #a1.collage {
@@ -243,8 +282,9 @@ body #magicPointer:not(.pointer-overlay) {
     section#foot {
         margin-top: 6rem;
     }
+
     #bottom-text-black {
-        bottom:2%;
+        bottom: 2%;
         left: 25%;
         width: 27%;
     }
@@ -265,11 +305,14 @@ body #magicPointer:not(.pointer-overlay) {
 
     #top-illustration-white {
 
-        top: 10%;
+        top: 13%;
         left: -3%;
         width: 65%;
     }
-
+    
+    #top-flower-black{
+        top:10%;
+    }
 }
 
 @media (min-width: 1400px) {

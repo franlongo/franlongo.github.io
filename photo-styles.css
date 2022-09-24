@@ -7,6 +7,8 @@ body {
     background-position: center;
     background-size: cover;
     display: flex;
+    align-items: center;
+
 }
 .bg{
     mix-blend-mode: multiply;
@@ -21,7 +23,7 @@ height: 100%;
     width: 100%;
     height: auto;
     position: relative;
-    padding: 8rem 0;
+    margin: 8rem 0;
 }
 audio{
     display: none;
